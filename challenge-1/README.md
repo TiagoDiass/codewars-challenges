@@ -1,6 +1,6 @@
 # CodeWars Challenge 1 :mahjong:
 
-:point_right: Você pode encontrar o desafio clicando (aqui)[https://www.codewars.com/kata/546f922b54af40e1e90001da]
+:point_right: Você pode encontrar este desafio clicando [aqui](https://www.codewars.com/kata/546f922b54af40e1e90001da)
 
 ### :brazil: Descrição em português:
 
