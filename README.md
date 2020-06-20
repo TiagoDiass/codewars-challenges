@@ -4,5 +4,5 @@ Neste repositório você encontrará o meu código fonte da resolução de algun
 
 Cada desafio tem sua descrição e link para que você possa entender o problema e quem sabe tentar resolvê-lo :see_no_evil:
 
-### :man_technologist: Autor: Tiago Dias
+### :man_technologist: Autor: [Tiago Dias](https://www.linkedin.com/in/tiagodiass)
 ##### :man_technologist: [Meu perfil no CodeWars](https://www.codewars.com/users/TiagoDiass)
