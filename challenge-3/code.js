@@ -30,12 +30,7 @@ function encode(string) {
     return /[aeiou]/.test(character) ? transformIntoNumber(character) : character;
   });
 
-  let finalString = '';
-  charactersArr.forEach(character => {
-    finalString = finalString.concat(character);
-  });
-
-  return finalString;
+  return charactersArr.join('');
 }
 
 function decode(string) {
@@ -45,11 +40,8 @@ function decode(string) {
     return /[12345]/.test(character) ? transformIntoVowel(character) : character;
   });
 
-  let finalString = '';
-
-  charactersArr.forEach(character => {
-    finalString = finalString.concat(character);
-  });
-
-  return finalString;
+  return charactersArr.join('');
 }
+
+console.log(encode('hello there'));
+console.log(decode('h2ll4 th2r2'));
