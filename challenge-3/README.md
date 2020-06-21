@@ -1,6 +1,6 @@
 # CodeWars Challenge 3 :mahjong:
 
-## Disemvowel Trolls :abc:
+## The Vowel Code :abc:
 
 :point_right: Você pode encontrar o desafio clicando [aqui](https://www.codewars.com/kata/53697be005f803751e0015aa)
 
