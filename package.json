@@ -1,0 +1,16 @@
+{
+  "name": "codewars-challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/TiagoDiass/codewars-challenges.git",
+  "author": "TiagoDiass <tiago.costadiasss@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^28.1.7",
+    "jest": "^28.1.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  }
+}
