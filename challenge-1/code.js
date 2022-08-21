@@ -1,49 +1,49 @@
-const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-function alphabetPosition (sentence) {
-    let onlyLowerCase = sentence.toLowerCase();
-    
-    let arraySentence = Array.from(onlyLowerCase);
+function alphabetPosition(sentence) {
+  let onlyLowerCase = sentence.toLowerCase();
 
-    let onlyLetters = returnOnlyLetters(arraySentence);
+  let arraySentence = Array.from(onlyLowerCase);
 
-    let onlyNumbers = returnNumbers(onlyLetters);
+  let onlyLetters = returnOnlyLetters(arraySentence);
 
-    let finalResult = onlyNumbers.toString();
+  let onlyNumbers = returnNumbers(onlyLetters);
 
-    for (let i = 0; i <= onlyNumbers.length-1; i++){
-        finalResult = finalResult.replace(',', ' ');
-    }
+  let finalResult = onlyNumbers.toString();
 
-    return finalResult;
+  for (let i = 0; i <= onlyNumbers.length - 1; i++) {
+    finalResult = finalResult.replace(",", " ");
+  }
+
+  return finalResult;
 }
 
-function returnNumbers (sentence) {
-    const alphabetArray = Array.from(alphabet);
+function returnNumbers(sentence) {
+  const alphabetArray = Array.from(alphabet);
 
-    let onlyNumbers = [];
+  let onlyNumbers = [];
 
-    sentence.forEach(letter => {
-        let letterPosition = (alphabetArray.indexOf(letter)) + 1;
-        onlyNumbers.push(letterPosition);
+  sentence.forEach((letter) => {
+    let letterPosition = alphabetArray.indexOf(letter) + 1;
+    onlyNumbers.push(letterPosition);
+  });
+
+  return onlyNumbers;
+}
+
+function returnOnlyLetters(arraySentence) {
+  const alphabetArray = Array.from(alphabet);
+  let onlyLetters = [];
+
+  arraySentence.forEach((character) => {
+    alphabetArray.forEach((letter) => {
+      if (character === letter) {
+        onlyLetters.push(character);
+      }
     });
+  });
 
-    return onlyNumbers;
+  return onlyLetters;
 }
 
-function returnOnlyLetters (arraySentence) {
-    const alphabetArray = Array.from(alphabet);
-    let onlyLetters = [];
-
-    arraySentence.forEach((character) => {
-        alphabetArray.forEach((letter) => {
-            if (character === letter) {
-                onlyLetters.push(character);
-            }
-        });
-    });
-
-    return onlyLetters;
-}
-
-alphabetPosition("The sunset sets at twelve o' clock.");
+module.exports = alphabetPosition;
