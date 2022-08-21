@@ -1,5 +1,5 @@
 const pipe = require("../pipe/pipe");
-const ALPHABET = "abcdefjhijklmnopqrstuvwxyz";
+const ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
 const lowercase = (str) => str.toLocaleLowerCase();
 
